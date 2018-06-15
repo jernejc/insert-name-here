@@ -1,0 +1,70 @@
+/*********
+	Helpers
+**********/
+
+.has-padding {
+	padding: 40px 0;
+}
+
+/*********
+	Header
+**********/
+
+.header-nav-wrapper .logo {
+	color: #7AE2DE;
+	font-size: 120%;
+	font-weight: bold;
+}
+
+/*******
+	Demos
+********/
+
+.collective .video-player
+{
+		margin: 0px 0 25px -30%;
+}
+
+@media screen and (max-width: 640px) {
+	.collective .video-player {
+			width: 100%;
+			margin: 0px 0 25px 0;
+			padding: 5px;
+	}
+}
+
+/******
+	Goal
+*******/
+
+.freebies .row.overview  {
+	margin-top: 80px;
+}
+
+.freebies .row.overview .col-md-1 {
+	width: 7%;
+}
+
+.freebies .row.overview .col-md-2 {
+	font-size: 400%;
+	text-align: center;
+}
+
+	.freebies .row.overview .col-md-2 a {
+		display: block;
+		color: #414A52;
+	}
+
+		.freebies .row.overview .col-md-2 a i {
+			transition: 0.2s linear color;
+		}
+
+		.freebies .row.overview .col-md-2 a:hover i {
+			color: #7AE2DE;
+		}
+
+	.freebies .row.overview .col-md-2 h4 {
+		text-align: left;
+		margin-left: 0px;
+		margin-top: 20px;
+	}
