@@ -6,6 +6,12 @@
 	padding: 40px 0;
 }
 
+.caption {
+	color: #aaa; 
+	font-size: 9px; 
+	float: right;
+}
+
 /*********
 	Header
 **********/

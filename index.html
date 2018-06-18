@@ -64,15 +64,12 @@
 				</div>
 			</div>
 			<div class="row">
+				
 				<div class="col-md-6 content-left">
-					<p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus cursus
-						ut parturient viverra elit aliquam ultrices est sem. Tellus nam ad fermentum ac enim est duis facilisis congue a lacus
-						adipiscing consequat risus consectetur scelerisque integer suspendisse a mus integer elit.</p>
+					<p>We want to bring back trust to the media, by forcing them to focus on quality and factual information and not compete in this clickback race that is happening at the moment. We want to empower the user in making informed judgement quickly. For that, we supply them with the information needed to verify a certain topic or realize its untrustworthiness.</p>
 				</div>
 				<div class="col-md-6 content-right">
-					<p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus cursus
-						ut parturient viverra elit aliquam ultrices est sem. Tellus nam ad fermentum ac enim est duis facilisis congue a lacus
-						adipiscing consequat risus consectetur scelerisque integer suspendisse a mus integer elit.</p>
+					<p>The platform enables ours users to do further research on the topic, evaluate news sources and share their finding with each other. We keep track of everyones <a href="#reputation">reputation</a> so they can be held accountable for their past and present contributions.</p>
 				</div>
 			</div>
 			<div class="row overview">
@@ -116,15 +113,16 @@
 					<h4>Educate</h4>
 				</div>
 				<div class="col-md-9">
-					<p>Built on connecting mutually relevant (similar) content together it seeks to add educational value to the user through
-						linking different forms of related information. Whenever a user encounters an article or post, we add to it the context
-						it so often lacks - related topics, similar articles, social comments, tweets, and so on.</p>
+					<p>We want to add educational value to our users through
+						linking different forms of related information. Whenever a user encounters a piece of content (articles, posts, tweets), we add to it the context
+						it so often lacks - related topics, similar articles, social comments, and so on.</p>
+					<p>Our servers run a greedy spider network, analyzing articles from various sources and ingesting them into our databases
+							by running them through NLP algorithms for assessing structure and word importance. Once ingested, we use similarity calculations 
+							on word vectors to match articles together and store similarity matrices for the documents.</p>
 					<div class="video-player">
 						<img src="img/swapping-bubbles.gif" width="100%" />
+						<small class="caption">Simple but working prototype, nothing is final</small>
 					</div>
-					<p>The backend runs a greedy spider network, analyzing articles from various sources and ingesting them into our databases
-						by running them through NLP algorithms for assessing structure and word importance. Once ingested, we use a cosine
-						similarity calculations on word vectors to match articles together and store similarity matrices for the documents.</p>
 				</div>
 			</div>
 		</div>
@@ -138,15 +136,18 @@
 					<h4>Contribute</h4>
 				</div>
 				<div class="col-md-9">
-					<p>We provide our users with tools to do more research and attach their findings. so the next user that comes along doesn't
-						have to repeat all the work and see what other users have attached. If a piece of content is contributed, it goes through
-						the same NLP process mentioned above, with the addition of reputation information of user that attached it.</p>
+					<h5>Article validation</h5>
+					<p>Users can contribute by answering a few simple questions on any given article to helps us asses it's validity and make sure it's
+						written within the <a href="https://www.spj.org/ethicscode.asp">Code of Ethics</a>. 
+						The weight of the answers depend on the <a href="#reputation">reputation</a> of the user. We use these answer to asses the <a href="#reputation">reputation</a> of the source.</p>
+					<h5>Content contribution</h5>
+					<p>Instead of only relying on our servers to find related content, users can attach additional content that they consider relevant to the subject. It goes through
+						the same NLP process mentioned above, with the addition of reputation information of user that attached it. 
+						We hope to crowdsource the time and efford that's needed in order to research a given topic. This is crucial if users are to make judgements quickly, but also keep them engaged.</p>
 					<div class="video-player">
 						<img src="img/contribute-demo.gif" width="100%">
+						<small class="caption">Simple but working prototype, nothing is final</small>
 					</div>
-					<p>This way the time and efford invested into researching q topic can be spread beetwen multiple users and make it easier,
-						more efficient. This is crucial as the amount of content people are bombarded with today is great, thus harder to fact
-						check every little bit.</p>
 				</div>
 			</div>
 		</div>
@@ -160,11 +161,18 @@
 					<h4>Reputation</h4>
 				</div>
 				<div class="col-md-9">
-					<p>Every entity (ordinary users, publications, journalists) in the platform has a public credibility score called "reputation".
-						Reputation is displayed next to every article source (publications or journalists) that was picked up by our backend,
-						or next to any contribution.</p>
+					<h5>Sources</h5>
+					<p>The reputation for an individual source is calculated by aggregating the <a href="#contribute">ratings</a> all of the articles it's associated with. 
+						This makes the most significant factor of ones credibility consistency over time, instead of it being judged based on individual basis.
+						The source and it's reputation is displayed next to each piece of content, so the user can take it into account while reading.</p>
+					<h5>Users</h5>
+					<p>Everytime a user makes a <a href="#contribute">contribution</a> he/she stakes his reputation on the line. 
+						The more reputation the user has the more his/her contributions matter. 
+						If we see a long history of valid ratings and relevant articles we can take that into account in future contributions. 
+						And of course the other way around, bad contributions will have a negative on future ratings.</p>
 					<div class="video-player">
 						<img src="img/reddit-fake-header.jpg" width="100%">
+						<small class="caption">Simple but working prototype, nothing is final</small>
 					</div>
 					<p>There are many ways to gain reputation, here are some simple examples every user should consider:</p>
 					<ul class="list-group">
@@ -192,18 +200,11 @@
 					<h4>Cross-platform</h4>
 				</div>
 				<div class="col-md-9">
-					<p>8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress, banjo normcore trust fund hella. Kinfolk
-						gluten-free lo-fi quinoa. Pabst kitsch ennui hoodie meggings banjo. Schlitz tacos kitsch godard before they sold out.
-						Kale chips chillwave kickstarter photo booth cronut cold-pressed. Banjo fixie umami kombucha affogato gluten-free authentic
-						slow-carb hashtag, hammock pour-over chambray viral VHS normcore.</p>
+					<p>We don't want to break existing habbits that people have on social media, but rather enrich existing ones. Instead of building a new platform, we will add content directly where news is already consumed. This means no matter the platform, we can always be present, anywhere, everywhere.</p>
 					<div class="video-player">
 						<img src="img/different-platforms.gif" width="100%">
+						<small class="caption">Simple but working prototype, nothing is final</small>
 					</div>
-					<p>8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress, banjo normcore trust fund hella. Kinfolk
-						gluten-free lo-fi quinoa. </p>
-					<p>Pabst kitsch ennui hoodie meggings banjo. Schlitz tacos kitsch godard before they sold out. Kale chips chillwave kickstarter
-						photo booth cronut cold-pressed. Banjo fixie umami kombucha affogato gluten-free authentic slow-carb hashtag, hammock
-						pour-over chambray viral VHS normcore.</p>
 				</div>
 			</div>
 		</div>
@@ -235,7 +236,7 @@
 							<a href="#platforms">Cross-platform</a>
 						</li>
 					</ul>
-					<ul class="footer-share">
+					<!--<ul class="footer-share">
 						<li>
 							<a href="#" class="share-trigger">
 								<i class="fa fa-share"></i>Share</a>
@@ -259,7 +260,7 @@
 								</a>
 							</li>
 						</ul>
-					</div>
+					</div>-->
 				</div>
 			</div>
 		</div>
