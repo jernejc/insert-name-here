@@ -16,7 +16,7 @@
 	text-align: center;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 640px) {
 	.navicon {
 		padding: 40px 35px;
 	}
