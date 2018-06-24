@@ -6,3 +6,5 @@ Trying to bring back trust to the media.
 - Contribute
 - Reputation
 - Cross-platform
+
+Hosted with Github pages: https://jernejc.github.io/insert-name-here/
