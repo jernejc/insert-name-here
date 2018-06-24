@@ -16,6 +16,12 @@
 	text-align: center;
 }
 
+@media screen and (max-width: 480px) {
+	.navicon {
+		padding: 40px 35px;
+	}
+} 
+
 /*********
 	Header
 **********/
@@ -36,7 +42,7 @@
 
 @media screen and (max-width: 640px) {
 	.collective .video-player {
-		width: 182%;
+		width: 185%;
     margin: 0px 0% 25px -45%;
 	}
 }
