@@ -4,12 +4,14 @@
 
 .has-padding {
 	padding: 40px 0;
+	overflow: hidden;
 }
 
 .caption {
 	color: #aaa; 
-	font-size: 9px; 
+	font-size: 10px; 
 	display: block;
+	margin-top: 5px;
 	width: 100%;
 	text-align: center;
 }
@@ -34,8 +36,8 @@
 
 @media screen and (max-width: 640px) {
 	.collective .video-player {
-		width: 170%;
-		margin: 0px 0% 25px -37%;
+		width: 182%;
+    margin: 0px 0% 25px -45%;
 	}
 }
 

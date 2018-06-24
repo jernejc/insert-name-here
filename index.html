@@ -9,9 +9,18 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/fontawesome-all.min.css">
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/owerwrites.css">
-	<link rel="stylesheet" href="css/fontawesome-all.min.css">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121310512-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'UA-121310512-1');
+	</script>
 </head>
 
 <body>
@@ -64,16 +73,18 @@
 				</div>
 			</div>
 			<div class="row">
-				
+
 				<div class="col-md-6 content-left">
-					<p>We want to bring back trust to the media by forcing them to focus on quality and factual information and not 
-						compete in this “clickback” race that is happening at the moment. The solution is to empower the user in making 
-						informed judgement quickly. For that, we supply them with the <a href="#educate">information</a> needed to verify a certain topic or realize its untrustworthiness.</p>
+					<p>We want to bring back trust to the media by forcing them to focus on quality and factual information and not compete
+						in this “clickback” race that is happening at the moment. The solution is to empower the user in making informed judgement
+						quickly. For that, we supply them with the
+						<a href="#educate">information</a> needed to verify a certain topic or realize its untrustworthiness.</p>
 				</div>
 				<div class="col-md-6 content-right">
-					<p>Users are able to do further research on the topic, evaluate news sources and share their <a href="#contribute">contributions</a> with each other. 
-						We keep track of everyone's <a href="#reputation">reputation</a> so they can be held accountable for their past and present work. 
-						Instead of building a separate system the goal is to be present on existing platforms so user habits can remain intact.</p>
+					<p>Users are able to do further research on the topic, evaluate news sources and share their
+						<a href="#contribute">contributions</a> with each other. We keep track of everyone's
+						<a href="#reputation">reputation</a> so they can be held accountable for their past and present work. Instead of building a separate system
+						the goal is to be present on existing platforms so user habits can remain intact.</p>
 				</div>
 			</div>
 			<div class="row overview">
@@ -118,13 +129,14 @@
 				</div>
 				<div class="col-md-9">
 					<h5>Related content</h5>
-					<p>We want to add educational value to our users through
-						linking different forms of related information. Whenever a user encounters a piece of content (articles, posts, tweets), we add to it the context
-						it so often lacks - related topics, similar articles, social comments, and so on. to identify entities within the text and connect them to Wikipedia, Wolfram|Alpha or other knowledgebases.</p>
+					<p>We want to add educational value to our users through linking different forms of related information. Whenever a user
+						encounters a piece of content (articles, posts, tweets), we add to it the context it so often lacks - related topics,
+						similar articles, social comments, and so on. to identify entities within the text and connect them to Wikipedia, Wolfram|Alpha
+						or other knowledgebases.</p>
 					<h5>Content processing</h5>
 					<p>Our servers run a greedy spider network, analyzing articles from various sources and ingesting them into our databases
-						by running them through NLP algorithms for assessing structure and word importance. Once ingested, we use similarity calculations 
-						on word vectors to match articles together and store similarity matrices for the documents.</p>
+						by running them through NLP algorithms for assessing structure and word importance. Once ingested, we use similarity
+						calculations on word vectors to match articles together and store similarity matrices for the documents.</p>
 					<div class="video-player">
 						<img src="img/swapping-bubbles.gif" width="100%" />
 						<small class="caption">Simple but working prototype, nothing is final</small>
@@ -143,16 +155,19 @@
 				</div>
 				<div class="col-md-9">
 					<h5>Article validation</h5>
-					<p>Users can contribute by answering a few simple questions on any given article to helps us asses it's validity and make sure it's
-						written within the <a href="https://www.spj.org/ethicscode.asp">Code of Ethics</a>. 
-						The weight of the answers depend on the <a href="#reputation">reputation</a> of the user. We use these answer to asses the <a href="#reputation">reputation</a> of the source.</p>
+					<p>Users can contribute by answering a few simple questions on any given article to helps us asses it's validity and make
+						sure it's written within the
+						<a href="https://www.spj.org/ethicscode.asp" target="_blank">Code of Ethics</a>. The weight of the answers depend on the
+						<a href="#reputation">reputation</a> of the user. We use these answer to asses the
+						<a href="#reputation">reputation</a> of the source.</p>
 					<h5>User contributions</h5>
-					<p>Users can directly attach additional links that they consider relevant to the subject. It goes through
-						the same NLP process mentioned above, with the additioni of reputation information of user that attached t. 
-						We hope to crowdsource the time and efford that's needed in order to research a given topic. This is crucial if users are to make judgements quickly, but also keep them engaged.</p>
+					<p>Users can directly attach additional links that they consider relevant to the subject. It goes through the same NLP
+						process mentioned above, with the additioni of reputation information of user that attached t. We hope to crowdsource
+						the time and efford that's needed in order to research a given topic. This is crucial if users are to make judgements
+						quickly, but also keep them engaged.</p>
 					<div class="video-player">
 						<img src="img/contribute-demo.gif" width="100%">
-						<small class="caption">Simple but working prototype, nothing is final</small>
+						<small class="caption">User can search and attach by keyword or URL</small>
 					</div>
 				</div>
 			</div>
@@ -168,13 +183,14 @@
 				</div>
 				<div class="col-md-9">
 					<h5>Sources</h5>
-					<p>The reputation for an individual source is calculated by aggregating the <a href="#contribute">ratings</a> all of the articles it's associated with. 
-						This makes the most significant factor of ones credibility consistency over time, instead of it being judged based on individual basis.
-						The source and it's reputation is displayed next to each piece of content, so the user can take it into account while reading.</p>
+					<p>The reputation for an individual source is calculated by aggregating the
+						<a href="#contribute">ratings</a> all of the articles it's associated with. This makes the most significant factor of ones credibility consistency
+						over time, instead of it being judged based on individual basis. The source and it's reputation is displayed next to
+						each piece of content, so the user can take it into account while reading.</p>
 					<h5>Users</h5>
-					<p>Everytime a user makes a <a href="#contribute">contribution</a> he/she stakes his reputation on the line. 
-						The more reputation the user has the more his/her contributions matter. 
-						If we see a long history of valid ratings and relevant articles we can take that into account in future contributions. 
+					<p>Everytime a user makes a
+						<a href="#contribute">contribution</a> he/she stakes his reputation on the line. The more reputation the user has the more his/her contributions
+						matter. If we see a long history of valid ratings and relevant articles we can take that into account in future contributions.
 						And of course the other way around, bad contributions will have a negative on future ratings.</p>
 					<div class="video-player">
 						<img src="img/reddit-fake-header.jpg" width="100%">
@@ -206,7 +222,9 @@
 					<h4>Cross-platform</h4>
 				</div>
 				<div class="col-md-9">
-					<p>We don't want to break existing habbits that people have on social media, but rather enrich existing ones. Instead of building a new platform, we will add content directly where news is already consumed. This means no matter the platform, we can always be present, anywhere, everywhere.</p>
+					<p>We don't want to break existing habbits that people have on social media, but rather enrich existing ones. Instead of
+						building a new platform, we will add content directly where news is already consumed. This means no matter the platform,
+						we can always be present, anywhere, everywhere.</p>
 					<div class="video-player">
 						<img src="img/different-platforms.gif" width="100%">
 						<small class="caption">Simple but working prototype, nothing is final</small>
@@ -272,38 +290,10 @@
 		</div>
 	</footer>
 	<!-- END SECTION: Footer -->
-	<!-- JS CDNs -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
-	<!-- jQuery local fallback -->
-	<script>
-		window.jQuery || document.write('<script src="js/min/jquery-1.11.2.min.js"><\/script>')
-	</script>
 	<!-- JS Locals -->
-	<script src="js/min/bootstrap.min.js"></script>
+	<script src="js/min/jquery-1.11.2.min.js"></script>
 	<script src="js/min/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-	<script src="js/min/retina.min.js"></script>
-	<script src="js/min/jquery.waypoints.min.js"></script>
 	<script src="js/scripts.js"></script>
-	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID and uncomment -->
-	<!--
-	<script>
-	(function(b, o, i, l, e, r) {
-		b.GoogleAnalyticsObject = l;
-		b[l] || (b[l] =
-			function() {
-				(b[l].q = b[l].q || []).push(arguments)
-			});
-		b[l].l = +new Date;
-		e = o.createElement(i);
-		r = o.getElementsByTagName(i)[0];
-		e.src = '//www.google-analytics.com/analytics.js';
-		r.parentNode.insertBefore(e, r)
-	}(window, document, 'script', 'ga'));
-	ga('create', 'UA-XXXXX-X', 'auto');
-	ga('send', 'pageview');
-	</script>
-	-->
 </body>
 
 </html>
