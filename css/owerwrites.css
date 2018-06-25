@@ -16,20 +16,32 @@
 	text-align: center;
 }
 
-@media screen and (max-width: 640px) {
-	.navicon {
-		padding: 40px 35px;
-	}
-} 
-
 /*********
 	Header
 **********/
+
+.header-nav-wrapper {
+	border-bottom: solid 5px #7AE2DE;
+	background-color: #414A52;
+}
 
 .header-nav-wrapper .logo {
 	color: #7AE2DE;
 	font-size: 120%;
 	font-weight: bold;
+	border: none;
+}
+
+.header-nav-wrapper .navicon {
+	background-color: transparent;
+}
+
+.header-nav-wrapper nav ul li a {
+	color: #E5E7E9;
+}
+
+.secondary-nav-wrapper {
+	padding: 0;
 }
 
 /*******
@@ -40,45 +52,61 @@
 	margin: 0px 0 25px -30%;
 }
 
-@media screen and (max-width: 640px) {
-	.collective .video-player {
-		width: 185%;
-    margin: 0px 0% 25px -45%;
-	}
-}
-
 /******
 	Goal
 *******/
 
 .freebies .row.overview  {
 	margin-top: 80px;
-}
-
-.freebies .row.overview .col-md-1 {
-	width: 7%;
-}
-
-.freebies .row.overview .col-md-2 {
 	font-size: 400%;
 	text-align: center;
 }
 
-	.freebies .row.overview .col-md-2 a {
+	.freebies .row.overview a {
 		display: block;
 		color: #414A52;
 	}
 
-		.freebies .row.overview .col-md-2 a i {
+		.freebies .row.overview a i {
 			transition: 0.2s linear color;
 		}
 
-		.freebies .row.overview .col-md-2 a:hover i {
+		.freebies .row.overview a:hover i {
 			color: #7AE2DE;
 		}
 
-	.freebies .row.overview .col-md-2 h4 {
+	.freebies .row.overview h4 {
 		text-align: left;
 		margin-left: 0px;
 		margin-top: 20px;
 	}
+
+/***************
+	Media Queries
+***************/
+
+/* Portrait */
+
+@media screen and (max-width: 640px) {
+	.navicon {
+		padding: 40px 35px;
+	}
+
+	.collective .video-player {
+		width: 200%;
+    margin: 0px 0% 25px -50%;
+	}
+}
+
+/* Landscape */
+
+@media screen and (max-width: 1024px) {
+	.navicon {
+		padding: 40px 35px;
+	}
+
+	.collective .video-player {
+		width: 200%;
+    margin: 0px 0% 25px -50%;
+	}
+}
