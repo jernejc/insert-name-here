@@ -96,6 +96,14 @@
 		width: 200%;
     margin: 0px 0% 25px -50%;
 	}
+
+	#reputation.collective .video-player {
+		margin-left: -6%;
+	}
+
+	#platforms.collective .video-player {
+		margin-left: -40%;
+	}
 }
 
 /* Landscape */
