@@ -131,14 +131,14 @@
 					<p>Whenever a user encounters a piece of content (articles, posts, tweets), it's added to the context it so often lacks - we attach related topics,
 						similar articles, social comments and so on. Different entities (people, places etc.) are identified within the text and connected to Wikipedia, Wolfram|Alpha
 						or other knowledgebases. Some basic information about the source and its <a href="#reputation">reputation</a> is also included.</p>
-					<h5>Content processing</h5>
-					<p>Our servers run a greedy spider network, analyzing articles from various sources and ingesting them into our databases
-						by running them through NLP algorithms for assessing structure and word importance. Once ingested, we use similarity
-						calculations on word vectors to match articles together and store similarity matrices for the documents.</p>
 					<div class="video-player">
 						<img src="img/swapping-bubbles.gif" width="100%" />
 						<small class="caption">Demo shows additional content attached to a tweet</small>
 					</div>
+					<h5>Content processing</h5>
+					<p>Our servers run a greedy spider network, analyzing articles from various sources and ingesting them into our databases
+						by running them through NLP algorithms for assessing structure and word importance. Once ingested, we use similarity
+						calculations on word vectors to match articles together and store similarity matrices for the documents.</p>
 					<h5>Boosting</h5>
 					<p>There's a potential bussines model available, by giving the sources the ability to boost an articles score an make it more likely to relate. 
 					The price is calculated by a biding process similar to an <a href="https://en.wikipedia.org/wiki/AdWords" target="_blank">Adwords</a> like system. 
@@ -187,10 +187,16 @@
 					<h5>Sources</h5>
 					<p>The reputation for an individual source is calculated by aggregating the
 						<a href="#engagement">scores</a> all of the articles it's associated with. This makes the most significant factor of ones credibility <b>consistency
-						over time</b>, instead of it being judged based on individual basis. We can sometimes rely on 3rd parties information that could affect the reputation of the source (Google News, Google Trends, Opensources, Web Archive etc.).</p>
+						over time</b>, instead of it being judged based on individual basis. We can sometimes rely on 3rd parties information that could affect the reputation 
+						of the source (Google News, Google Trends, Opensources, Web Archive etc.).</p>
 					<h5>Users</h5>
-					<p>Everytime a user makes a <a href="#engagement">contribution</a> he/she stakes his reputation on the line. The content must be <a href="#context">related</a> and within the <a href="https://en.wikipedia.org/wiki/Journalism_ethics_and_standards" target="_blank">code of ethics</a> in order to have a positive affect on the users reputation. 
-					 By default user accounts are anonymus, but have the ability to connect social accounts (<a href="https://help.twitter.com/en/managing-your-account/about-twitter-verified-accounts" target="_blank">verified Twitter</a>, <a href="https://www.facebook.com/help/1288173394636262" target="_blank">verified Facebook</a>) to identify as journalist or other experts in their respected fields, which would also contribute to their reputation.</p>
+					<p>Everytime a user makes a <a href="#engagement">contribution</a> he/she stakes his reputation on the line. 
+						The content must be considered <a href="#context">related</a> by our server and within the 
+						<a href="https://en.wikipedia.org/wiki/Journalism_ethics_and_standards" target="_blank">code of ethics</a> in order to have a positive affect on the users reputation. 
+					 By default user accounts are anonymus, but have the ability to connect social accounts 
+					 (<a href="https://help.twitter.com/en/managing-your-account/about-twitter-verified-accounts" target="_blank">verified Twitter</a>, 
+					 <a href="https://www.facebook.com/help/1288173394636262" target="_blank">verified Facebook</a>) to identify as journalist or other experts in their respected fields, 
+					 which would also contribute to their reputation.</p>
 					<div class="video-player">
 						<img src="img/reddit-fake-header.jpg" width="100%">
 						<small class="caption">Reputation is shown next to the article</small>
