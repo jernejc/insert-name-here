@@ -33,10 +33,10 @@
 					<nav>
 						<ul class="primary-nav">
 							<li>
-								<a href="#educate">Educate</a>
+								<a href="#context">Context</a>
 							</li>
 							<li>
-								<a href="#contribute">Contribute</a>
+								<a href="#engagement">Engagement</a>
 							</li>
 							<li>
 								<a href="#reputation">Reputation</a>
@@ -77,11 +77,11 @@
 					<p>We want to bring back trust to the media by forcing them to focus on quality and factual information and not compete
 						in this “clickback” race that is happening at the moment. The solution is to empower the user in making informed judgement
 						quickly. For that, we supply them with the
-						<a href="#educate">information</a> needed to verify a certain topic or realize its untrustworthiness.</p>
+						<a href="#context">information</a> needed to verify a certain topic or realize its untrustworthiness.</p>
 				</div>
 				<div class="col-md-6 content-right">
 					<p>Users are able to do further research on the topic, evaluate news sources and share their
-						<a href="#contribute">contributions</a> with each other. We keep track of everyone's
+						<a href="#engagement">contributions</a> with each other. We keep track of everyone's
 						<a href="#reputation">reputation</a> so they can be held accountable for their past and present work. Instead of building a separate system
 						the goal is to be present on existing platforms so user habits can remain intact.</p>
 				</div>
@@ -89,16 +89,16 @@
 			<div class="row overview">
 				<div class="col-sm-1"></div>
 				<div class="col-sm-2">
-					<a href="#educate">
+					<a href="#context">
 						<i class="icon icon-Book" aria-hidden="true"></i>
-						<h4>Educate</h4>
+						<h4>Context</h4>
 					</a>
 				</div>
 				<div class="col-sm-1"></div>
 				<div class="col-sm-2">
-					<a href="#contribute">
+					<a href="#engagement">
 						<i class="icon icon-Pen" aria-hidden="true"></i>
-						<h4>Contribute</h4>
+						<h4>Engagement</h4>
 					</a>
 				</div>
 				<div class="col-sm-1"></div>
@@ -119,19 +119,18 @@
 		</div>
 	</section>
 	<!-- END SECTION: Goal -->
-	<!-- SECTION: Educate -->
-	<section class="collective has-padding alternate-bg" id="educate">
+	<!-- SECTION: Context -->
+	<section class="collective has-padding alternate-bg" id="context">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-3">
-					<h4>Educate</h4>
+					<h4>Context</h4>
 				</div>
 				<div class="col-md-9">
 					<h5>Related content</h5>
-					<p>We want to add educational value to our users through linking different forms of related information. Whenever a user
-						encounters a piece of content (articles, posts, tweets), we add to it the context it so often lacks - related topics,
-						similar articles, social comments, and so on. to identify entities within the text and connect them to Wikipedia, Wolfram|Alpha
-						or other knowledgebases.</p>
+					<p>Whenever a user encounters a piece of content (articles, posts, tweets), it's added to the context it so often lacks - we attach related topics,
+						similar articles, social comments and so on. Different entities (people, places etc.) are identified within the text and connected to Wikipedia, Wolfram|Alpha
+						or other knowledgebases. Some basic information about the source and its <a href="#reputation">reputation</a> is also included.</p>
 					<h5>Content processing</h5>
 					<p>Our servers run a greedy spider network, analyzing articles from various sources and ingesting them into our databases
 						by running them through NLP algorithms for assessing structure and word importance. Once ingested, we use similarity
@@ -140,28 +139,32 @@
 						<img src="img/swapping-bubbles.gif" width="100%" />
 						<small class="caption">Demo shows additional content attached to a tweet</small>
 					</div>
+					<h5>Boosting</h5>
+					<p>There's a potential bussines model available, by giving the sources the ability to boost an articles score an make it more likely to relate. 
+					The price is calculated by a biding process similar to an <a href="https://en.wikipedia.org/wiki/AdWords" target="_blank">Adwords</a> like system. 
+					It would make the platform self sustaining and also serve as a possible traffic source for news publisher. </p>
 				</div>
 			</div>
 		</div>
 	</section>
-	<!-- END SECTION: Educate -->
-	<!-- SECTION: Contribute -->
-	<section class="collective has-padding" id="contribute">
+	<!-- END SECTION: Context -->
+	<!-- SECTION: Engagement -->
+	<section class="collective has-padding" id="engagement">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-3">
-					<h4>Contribute</h4>
+					<h4>Engagement</h4>
 				</div>
 				<div class="col-md-9">
-					<h5>Article validation</h5>
+					<h5>Article score</h5>
 					<p>Users can contribute by answering a few simple questions on any given article to helps us asses it's validity and make
 						sure it's written within the
-						<a href="https://www.spj.org/ethicscode.asp" target="_blank">Code of Ethics</a>. The weight of the answers depend on the
+						<a href="https://en.wikipedia.org/wiki/Journalism_ethics_and_standards" target="_blank">code of ethics</a>. The weight of the answers depends on the
 						<a href="#reputation">reputation</a> of the user. We use these answer to asses the
 						<a href="#reputation">reputation</a> of the source.</p>
 					<h5>User contributions</h5>
-					<p>Users can directly attach additional links that they consider relevant to the subject. It goes through the same NLP
-						process mentioned above, with the additioni of reputation information of user that attached t. We hope to crowdsource
+					<p>Users can append additional links that they consider relevant to the subject. It goes through the same NLP
+						process mentioned above, with the addition of the users <a href="#reputation">reputation</a>. We hope to crowdsource
 						the time and efford that's needed in order to research a given topic. This is crucial if users are to make judgements
 						quickly, but also keep them engaged.</p>
 					<div class="video-player">
@@ -172,7 +175,7 @@
 			</div>
 		</div>
 	</section>
-	<!-- END SECTION: Contribute -->
+	<!-- END SECTION: Engagement -->
 	<!-- SECTION: Reputation -->
 	<section class="collective has-padding alternate-bg" id="reputation">
 		<div class="container">
@@ -183,31 +186,15 @@
 				<div class="col-md-9">
 					<h5>Sources</h5>
 					<p>The reputation for an individual source is calculated by aggregating the
-						<a href="#contribute">ratings</a> all of the articles it's associated with. This makes the most significant factor of ones credibility consistency
-						over time, instead of it being judged based on individual basis. The source and it's reputation is displayed next to
-						each piece of content, so the user can take it into account while reading.</p>
+						<a href="#engagement">scores</a> all of the articles it's associated with. This makes the most significant factor of ones credibility <b>consistency
+						over time</b>, instead of it being judged based on individual basis. We can sometimes rely on 3rd parties information that could affect the reputation of the source (Google News, Google Trends, Opensources, Web Archive etc.).</p>
 					<h5>Users</h5>
-					<p>Everytime a user makes a
-						<a href="#contribute">contribution</a> he/she stakes his reputation on the line. The more reputation the user has the more his/her contributions
-						matter. If we see a long history of valid ratings and relevant articles we can take that into account in future contributions.
-						And of course the other way around, bad contributions will have a negative on future ratings.</p>
+					<p>Everytime a user makes a <a href="#engagement">contribution</a> he/she stakes his reputation on the line. The content must be <a href="#context">related</a> and within the <a href="https://en.wikipedia.org/wiki/Journalism_ethics_and_standards" target="_blank">code of ethics</a> in order to have a positive affect on the users reputation. 
+					 By default user accounts are anonymus, but have the ability to connect social accounts (<a href="https://help.twitter.com/en/managing-your-account/about-twitter-verified-accounts" target="_blank">verified Twitter</a>, <a href="https://www.facebook.com/help/1288173394636262" target="_blank">verified Facebook</a>) to identify as journalist or other experts in their respected fields, which would also contribute to their reputation.</p>
 					<div class="video-player">
 						<img src="img/reddit-fake-header.jpg" width="100%">
 						<small class="caption">Reputation is shown next to the article</small>
 					</div>
-					<p>There are many ways to gain reputation, here are some simple examples every user should consider:</p>
-					<ul class="list-group">
-						<li class="list-group-item">Connect a verified twitter account</li>
-						<li class="list-group-item">Contribute content that other users consider relevant</li>
-					</ul>
-					<p>Some major reputation sources for Publications and journalists</p>
-					<ul>
-						<li class="list-group-item">Users can answer questions about an article where to help us figure out if the article is compliant with the
-							<a href="https://www.spj.org/ethicscode.asp" target="_blank">SPJ Code of Ethics</a>
-						</li>
-						<li class="list-group-item">In some cases we rely on 3rd party sources to determent the credibility of an unknown source. (eg.
-							<a href="http://www.opensources.co/" target="_blank">Opensources</a>)</li>
-					</ul>
 				</div>
 			</div>
 		</div>
@@ -227,7 +214,7 @@
 						we can always be present.</p>
 					<div class="video-player">
 						<img src="img/different-platforms.gif" width="100%">
-						<small class="caption">Browser extension can be used across multiple sites</small>
+						<small class="caption">Browser extension prototype can be used across multiple sites</small>
 					</div>
 				</div>
 			</div>
@@ -248,10 +235,10 @@
 				<div class="col-md-12 footer-nav">
 					<ul class="footer-primary-nav">
 						<li>
-							<a href="#educate">Educate</a>
+							<a href="#context">Context</a>
 						</li>
 						<li>
-							<a href="#contribute">Contribute</a>
+							<a href="#engagement">Engagement</a>
 						</li>
 						<li>
 							<a href="#reputation">Reputation</a>
