@@ -157,12 +157,12 @@
 				</div>
 				<div class="col-md-9">
 					<h5>Article score</h5>
-					<p>Users can contribute by answering a few simple questions on any given article to helps us asses it's validity and make
+					<p>Users can contribute by answering a set of questions on any given article to helps us asses it's validity and make
 						sure it's written within the
 						<a href="https://en.wikipedia.org/wiki/Journalism_ethics_and_standards" target="_blank">code of ethics</a>. The weight of the answers depends on the
 						<a href="#reputation">reputation</a> of the user. We use these answer to asses the
 						<a href="#reputation">reputation</a> of the source.</p>
-					<h5>User contributions</h5>
+					<h5>Article contributions</h5>
 					<p>Users can append additional links that they consider relevant to the subject. It goes through the same NLP
 						process mentioned above, with the addition of the users <a href="#reputation">reputation</a>. We hope to crowdsource
 						the time and efford that's needed in order to research a given topic. This is crucial if users are to make judgements
@@ -187,12 +187,13 @@
 					<h5>Sources</h5>
 					<p>The reputation for an individual source is calculated by aggregating the
 						<a href="#engagement">scores</a> all of the articles it's associated with. This makes the most significant factor of ones credibility <b>consistency
-						over time</b>, instead of it being judged based on individual basis. We can sometimes rely on 3rd parties information that could affect the reputation 
-						of the source (Google News, Google Trends, Opensources, Web Archive etc.).</p>
+						over time</b>, instead of being judged based on an individual basis. In some cases we rely on 3rd party information to assess the reputation 
+						of a given source (Google News, Google Trends, Opensources, Web Archive etc.).</p>
 					<h5>Users</h5>
 					<p>Everytime a user makes a <a href="#engagement">contribution</a> he/she stakes his reputation on the line. 
-						The content must be considered <a href="#context">related</a> by our server and within the 
-						<a href="https://en.wikipedia.org/wiki/Journalism_ethics_and_standards" target="_blank">code of ethics</a> in order to have a positive affect on the users reputation. 
+						The content must be considered <a href="#context">related</a> by our server and have a high <a href="#engagement">score</a> in order to have a positive affect on the users reputation. 
+						A history of non-relevant and low scoring contributions would have a negative affect.</p>
+						<p>
 					 By default user accounts are anonymus, but have the ability to connect social accounts 
 					 (<a href="https://help.twitter.com/en/managing-your-account/about-twitter-verified-accounts" target="_blank">verified Twitter</a>, 
 					 <a href="https://www.facebook.com/help/1288173394636262" target="_blank">verified Facebook</a>) to identify as journalist or other experts in their respected fields, 
