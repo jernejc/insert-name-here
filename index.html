@@ -128,9 +128,10 @@
 				</div>
 				<div class="col-md-9">
 					<h5>Related content</h5>
-					<p>Whenever a user encounters a piece of content (articles, posts, tweets), it's added to the context it so often lacks - we attach related topics,
-						similar articles, social comments and so on. Different entities (people, places etc.) are identified within the text and connected to Wikipedia, Wolfram|Alpha
+					<p>Whenever a user encounters a piece of content (article, post, tweet), it's added to the context it so often lacks - we attach related topics,
+						similar articles, social comments and so on. Different entities (people, places etc.) are identified within the text and connected to Wikipedia, Encyclopedia Britannica, Wolfram|Alpha
 						or other knowledgebases. Some basic information about the source and its <a href="#reputation">reputation</a> is also included.</p>
+					<p>With more information we can make a more informed descision about the subject, while also taking care of our news diet by reading multiple points of view.</p>
 					<div class="video-player">
 						<img src="img/swapping-bubbles.gif" width="100%" />
 						<small class="caption">Demo shows additional content attached to a tweet</small>
@@ -140,9 +141,9 @@
 						by running them through NLP algorithms for assessing structure and word importance. Once ingested, we use similarity
 						calculations on word vectors to match articles together and store similarity matrices for the documents.</p>
 					<h5>Boosting</h5>
-					<p>There's a potential bussines model available, by giving the sources the ability to boost an articles score an make it more likely to relate. 
+					<p>There's a potential bussines model available, by giving sources the ability to boost an articles score an make it more likely to relate. 
 					The price is calculated by a biding process similar to an <a href="https://en.wikipedia.org/wiki/AdWords" target="_blank">Adwords</a> like system. 
-					It would make the platform self sustaining and also serve as a possible traffic source for news publisher. </p>
+					It would make the platform self sustaining and serve as a possible traffic source for news publisher. </p>
 				</div>
 			</div>
 		</div>
@@ -156,20 +157,19 @@
 					<h4>Engagement</h4>
 				</div>
 				<div class="col-md-9">
-					<h5>Article score</h5>
-					<p>Users can contribute by answering a set of questions on any given article to helps us asses it's validity and make
+					<h5>Report content</h5>
+					<p>Users can contribute by answering a set of questions on a piece of content to helps us asses it's validity and make
 						sure it's written within the
 						<a href="https://en.wikipedia.org/wiki/Journalism_ethics_and_standards" target="_blank">code of ethics</a>. The weight of the answers depends on the
-						<a href="#reputation">reputation</a> of the user. We use these answer to asses the
-						<a href="#reputation">reputation</a> of the source.</p>
-					<h5>Article contributions</h5>
+						<a href="#reputation">reputation</a> of the user.
+					<h5>Content contributions</h5>
 					<p>Users can append additional links that they consider relevant to the subject. It goes through the same NLP
 						process mentioned above, with the addition of the users <a href="#reputation">reputation</a>. We hope to crowdsource
 						the time and efford that's needed in order to research a given topic. This is crucial if users are to make judgements
 						quickly, but also keep them engaged.</p>
 					<div class="video-player">
 						<img src="img/contribute-demo.gif" width="100%">
-						<small class="caption">Users can search by keyword or paste an URL</small>
+						<small class="caption">Protoype shows how a user can do further research on the topic</small>
 					</div>
 				</div>
 			</div>
@@ -188,7 +188,7 @@
 					<p>The reputation for an individual source is calculated by aggregating the
 						<a href="#engagement">scores</a> all of the articles it's associated with. This makes the most significant factor of ones credibility <b>consistency
 						over time</b>, instead of being judged based on an individual basis. In some cases we rely on 3rd party information to assess the reputation 
-						of a given source (Google News, Google Trends, Opensources, Web Archive etc.).</p>
+						of a given source (Domain Lookup, Web Archive, Opensources, Google News,  etc.).</p>
 					<h5>Users</h5>
 					<p>Everytime a user makes a <a href="#engagement">contribution</a> he/she stakes his reputation on the line. 
 						The content must be considered <a href="#context">related</a> by our server and have a high <a href="#engagement">score</a> in order to have a positive affect on the users reputation. 
