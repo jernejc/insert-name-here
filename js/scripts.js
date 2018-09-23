@@ -63,4 +63,6 @@ $(document).ready(function() {
             $(this).toggleClass('hover');
         });
     }
+
+    $( '#cbp-contentslider' ).cbpContentSlider();
 });
