@@ -7,6 +7,16 @@
 	overflow: hidden;
 }
 
+.has-margin {
+	margin: 60px 0px;
+	padding: 0;
+}
+
+.more {
+	display: block;
+	margin-top: 40px; 
+}
+
 .caption {
 	color: #aaa; 
 	font-size: 10px; 
@@ -27,6 +37,10 @@ p b {
 .header-nav-wrapper {
 	border-bottom: solid 5px #7AE2DE;
 	background-color: #414A52;
+}
+
+.header-nav-wrapper nav {
+	padding: 15px 0 0;
 }
 
 .header-nav-wrapper .logo {
@@ -54,6 +68,38 @@ p b {
 
 .collective .video-player {
 	margin: 0px 0 25px -30%;
+}
+
+/********
+	Intro
+	********/
+
+#intro {
+	text-align: center
+}
+
+#intro i {
+	font-size: 7em;
+	line-height: 1.4em;
+}
+
+#intro h1 {
+	font-size: 5em;
+	line-height: 1.2em;
+}
+
+#intro h5 {
+	font-size: 1em;
+}
+
+#intro p span {
+	width: 50px;
+	margin: 0px 10px;
+	display: inline-block;
+}
+
+#intro p span img {
+	width: 100%;
 }
 
 /******
