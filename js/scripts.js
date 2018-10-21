@@ -65,4 +65,14 @@ $(document).ready(function() {
     }
 
     $( '#cbp-contentslider' ).cbpContentSlider();
+
+    $( '.browser-v' ).on('click', (event) => {
+        if (event.currentTarget.classList.contains('grey'))
+            return;
+
+        if (!event.currentTarget.dataset.link)
+            return;
+
+        window.open(event.currentTarget.dataset.link, '_blank');
+    })
 });

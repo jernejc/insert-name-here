@@ -3,7 +3,7 @@
 **********/
 
 .has-padding {
-	padding: 40px 0;
+	padding: 60px 0;
 	overflow: hidden;
 }
 
@@ -14,7 +14,7 @@
 
 .more {
 	display: block;
-	margin-top: 40px; 
+	margin-top: 60px; 
 }
 
 .caption {
@@ -24,6 +24,33 @@
 	margin-top: 5px;
 	width: 100%;
 	text-align: center;
+}
+
+.equal {
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+}
+
+.bottom {
+	position: absolute;
+	bottom: 0;
+}
+
+.example {
+	bottom: 25px;
+}
+
+.example .double-right {
+	position: absolute;
+	left: -25px;
+	bottom: -3px;
+	color: #7AE2DE;
+}
+
+ul.list li, .list {
+	list-style: circle;
+	margin: 0px 0px 15px 10px;
 }
 
 p b {
@@ -92,15 +119,26 @@ p b {
 	font-size: 1em;
 }
 
-#intro p span {
+.browser-v {
 	width: 50px;
 	margin: 0px 10px;
 	display: inline-block;
+	cursor: pointer;
 }
 
-#intro p span img {
+	.browser-v.grey {
+		cursor: default;
+	}
+
+.browser-v img {
 	width: 100%;
 }
+
+	.browser-v.grey img {
+		filter: gray; /* IE6-9 */
+		-webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+		filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+	}
 
 /******
 	Goal
@@ -352,26 +390,24 @@ html, body, .container, .main { height: 100%; }
 /* Layout */
 
 .template {
-	border-radius: 4px;
-	border: 1px solid #dfe1e5;
-	width: 80%;
-	margin: 20px auto;
-	min-height: 300px;
-	position: relative;
+	position: absolute;
+	width: 100%;
+	right: 35px;
+	bottom: 43px;
+	z-index: 2;
 }
 
 .template .bubble {
 	min-height: 200px;
-	width: 320px;
+	width: 360px;
 	border: 1px solid #dfe1e5;
 	border-radius: 4px;
 	position: absolute;
 	bottom: 20px;
-	right: 55px;
-	text-align: center;
+	right: 142px;
+	background: #FFF;
 	color: #dfe1e5;
-	font-size: 9em;
-	padding: 30px 0 0 0;
+	padding: 10px;
 }
 
 .template .bubble .arrow {
@@ -393,16 +429,49 @@ html, body, .container, .main { height: 100%; }
 
 .template .bubble .arrow:after {
 	border-color: rgba(136, 183, 213, 0);
-	border-top-color: #7AE2DE;
+	border-top-color: #e1e8ed; /* #7AE2DE; */
 	border-width: 8px;
 	margin-left: -8px;
 }
 
 .template .bubble .arrow:before {
 	border-color: rgba(194, 225, 245, 0);
-	border-top-color: rgba(122, 226, 222, 0.5);
+	border-top-color: #e1e8ed;  /* rgba(122, 226, 222, 0.5); */
 	border-width: 13px;
 	margin-left: -13px;
+}
+
+.template .bubble .bubble-header {
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #e1e8ed;
+	position: relative;
+	min-height: 70px;
+}
+
+.template .bubble .bubble-header .bubble-stats {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	font-size: 0.8em;
+	color: #414A52;
+}
+
+.template .bubble .bubble-header .author-avatar {
+	margin-right: 10px;
+}
+
+.template .bubble .bubble-header h5 {
+	display: inline;
+	text-transform: none;
+	font-size: 1em;
+}
+
+.template .bubble .bubble-body p {
+	line-height: 1.4em;
+	font-size: 0.9em;
+	margin: 10px 0px;
+	padding: 0;
 }
 
 .template .bubbles {
@@ -411,34 +480,167 @@ html, body, .container, .main { height: 100%; }
 	bottom: -13px;
 }
 
-.template .bubbles span {
+.template .bubbles .rating {
 	position: relative;
-	bottom: 4px;
 	display: inline-block;
-	width: 40px;
-	height: 20px;
-	border: 1px solid #dfe1e5;
-	border-radius: 4px;
-	color: #FFF;
-	font-size: 1.2em;
-	text-align: center;
-	background: #7AE2DE;
+	font-size: 1em;
+	text-align: left;
+}
+
+	.template .bubbles .rating.green {
+		color: rgba(22, 179, 48, 1);
+	}
+
+.template .bubbles .rating span {
+	font-size: 12px;
+	margin-right: -7px;
+	vertical-align: middle;
+	border-top-left-radius: 2px;
+	border-bottom-left-radius: 2px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(225, 232, 237);
+	border-image: initial;
+	padding: 4px 9px 3px 4px;
 }
 
 .template .bubbles ul {
 	display: inline-block;
+	position: relative;
+	border-right: 1px solid rgba(65,74,82,0.2);
+	padding-right: 3px;
+	margin-right: 0px;
+	top: 6px;
 }
 
 .template .bubbles ul li {
-	display: inline-block;
+	float: left;
 	width: 20px;
 	height: 20px;
-	margin: 0 -1px;
+	margin: 0 1px;
 	border-radius: 50%;
+	overflow: hidden;
 	border: 1px solid #dfe1e5;
 	background: #F4F6F9;
+	padding: 0;
+	margin: 0;
 }
 
+.template .bubbles ul span {
+	position: absolute;
+	color: inherit;
+	border-right: 1px solid inherit;
+	bottom: -15px;
+	font-size: 8px;
+	letter-spacing: 0px;
+	right: -1px;
+	padding: 4px 3px 0px 0px;
+}
+
+.template .bubbles ul li img {
+	width: 100%;
+	position: relative;
+	bottom: 0px;
+}
+
+	.template .bubbles ul li.wikipedia img {
+		bottom: -1px;
+	}
+
 .template .bubbles ul li.active {
-	background: #7AE2DE;
+	transform: scale(1.1);
+	border: 1px solid #168fc6;
+	z-index: 3;
+}
+
+/***	
+	Embeded tweet
+**/
+
+.twitter-tweet {
+	padding: 20px 20px 35px 20px;
+	overflow: hidden;
+	background-color: #fff;
+	border: 1px solid #e1e8ed;
+	border-radius: 4px;
+	max-width: 630px;
+	position: relative;
+}
+
+.twitter-tweet a {
+	color: #2b7bb9;
+}
+
+.twitter-tweet .tweet-header {
+	position: relative;
+	opacity: 0.4;
+}
+
+.twitter-tweet .tweet-header .author-avatar {
+	margin-right: 15px;
+}
+
+.twitter-tweet .tweet-header h5 {
+	text-transform: none;
+	font-size: 1.2em;
+	margin-bottom: 5px;
+}
+
+.twitter-tweet .tweet-header .tweet-icon {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+
+.twitter-tweet .tweet-author:after {
+	clear: both;
+	padding: 5px;
+}
+
+.twitter-tweet .tweet-body {
+	margin: 15px 0px;
+}
+
+.twitter-tweet .tweet-body p {
+	line-height: 1.4em;
+	margin: 5px 0;
+	padding: 0;
+}
+
+.twitter-tweet .tweet-body time {
+	color: #aaa;
+	font-size: 0.9em;
+}
+
+.twitter-tweet .tweet-summary {
+	border-radius: .85715em;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #E1E8ED;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.twitter-tweet .tweet-summary .article-image {
+	margin: -75px 0px -75px;
+	position: relative;
+	z-index: 1;
+}
+
+.twitter-tweet .tweet-summary .tweet-summary-details {
+	background: #FFF;
+	padding: 20px;
+	position: relative;
+	z-index: 2;
+}
+
+.twitter-tweet .tweet-summary .tweet-summary-details span {
+	color: #aaa;
+	font-size: 0.9em;
+}
+
+.twitter-tweet .tweet-summary .tweet-summary-details p {
+	line-height: 1.4em;
+	margin: 5px 0 6px;
+	padding: 0;
 }
